@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'pages/home.dart';
 //import 'pages/home.dart';
 void main() {
   runApp(const MyApp());
@@ -21,14 +21,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'SmartCeps',
       theme: themeData,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('SmartCeps'),
-        ),
-        body: const Center(
-          child: Text('Hi'),
-        ),
-      ),
+      home: Home()
     );
   }  
 }
